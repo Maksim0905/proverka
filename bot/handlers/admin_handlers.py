@@ -1,17 +1,7 @@
-import asyncio
-import logging
-from aiogram import BaseMiddleware
-from aiogram import types, Dispatcher, Bot
-from aiogram.filters import CommandStart, Command, StateFilter
-from aiogram.types import Message, ContentType, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InputMediaPhoto, InputMediaVideo, InputMediaAudio, InputMediaDocument, InputMediaAnimation
+from aiogram import types, Bot
+from aiogram.filters import Command
+from aiogram.types import CallbackQuery
 from aiogram import F, Router
-from aiogram.fsm.context import FSMContext
-from aiogram.types import FSInputFile
-from aiogram.fsm.state import State, StatesGroup
-import math
-import os
-from datetime import datetime, timedelta
-from aiogram.enums import ParseMode
 import bot.keyboards.admin_keyboards as kb
 from bot.config import admins
 
